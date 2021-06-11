@@ -1,3 +1,4 @@
+import { env } from 'process';
 import { client } from 'src/utils/apiClient';
 
 export interface PaginationResponse {
@@ -31,6 +32,7 @@ export interface ReleasesByArtistRequest {
   paginatedRequest?: string;
 }
 
+
 // a function to make an api call and format reponse
 export const getReleasesByArtist = async (
   payload: ReleasesByArtistRequest
@@ -40,7 +42,7 @@ export const getReleasesByArtist = async (
     : `https://api.discogs.com/database/search?type=release&artist=${payload.artistName}&page=${DEFAULT_PAGE_INDEX}&per_page=${PAGINATION_SIZE}`;
   const data = await client(requestUrl, {
     headers: {
-      Authorization: `Discogs key=${'MHgAPEMDzpDRneiyXJwM'}, secret=${'CDypAPAKtdqcmNJVxuPMVndFxfuaSyuu'}`,
+      Authorization: `Discogs key=${process.env.REACT_APP_DISCOGS_CONSUMER_KEY}, secret=${process.env.REACT_APP_DISCOGS_SECRET_KEY}`,
     },
   });
   const paginationResults: PaginationResponse = {
