@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/discogs-search-app/static/js/main.930219a1.chunk.js",
+    "main.js.map": "/discogs-search-app/static/js/main.930219a1.chunk.js.map",
+    "runtime-main.js": "/discogs-search-app/static/js/runtime-main.38da9935.js",
+    "runtime-main.js.map": "/discogs-search-app/static/js/runtime-main.38da9935.js.map",
+    "static/js/2.f28d1172.chunk.js": "/discogs-search-app/static/js/2.f28d1172.chunk.js",
+    "static/js/2.f28d1172.chunk.js.map": "/discogs-search-app/static/js/2.f28d1172.chunk.js.map",
+    "static/js/3.7c273c44.chunk.js": "/discogs-search-app/static/js/3.7c273c44.chunk.js",
+    "static/js/3.7c273c44.chunk.js.map": "/discogs-search-app/static/js/3.7c273c44.chunk.js.map",
+    "static/js/4.e31812ed.chunk.js": "/discogs-search-app/static/js/4.e31812ed.chunk.js",
+    "static/js/4.e31812ed.chunk.js.map": "/discogs-search-app/static/js/4.e31812ed.chunk.js.map",
+    "static/js/5.88c877f4.chunk.js": "/discogs-search-app/static/js/5.88c877f4.chunk.js",
+    "static/js/5.88c877f4.chunk.js.map": "/discogs-search-app/static/js/5.88c877f4.chunk.js.map",
+    "index.html": "/discogs-search-app/index.html",
+    "service-worker.js": "/discogs-search-app/service-worker.js",
+    "service-worker.js.map": "/discogs-search-app/service-worker.js.map",
+    "static/js/2.f28d1172.chunk.js.LICENSE.txt": "/discogs-search-app/static/js/2.f28d1172.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38da9935.js",
+    "static/js/2.f28d1172.chunk.js",
+    "static/js/main.930219a1.chunk.js"
+  ]
+}
