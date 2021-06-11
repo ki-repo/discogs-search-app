@@ -20,8 +20,8 @@ jobs:
       - name: Build page
         run: npm run build
         env:
-        REACT_APP_DISCOGS_CONSUMER_KEY: ${{ secrets.REACT_APP_DISCOGS_CONSUMER_KEY }}
-        REACT_APP_DISCOGS_SECRET_KEY: ${{ secrets.REACT_APP_DISCOGS_SECRET_KEY }}
+          REACT_APP_DISCOGS_CONSUMER_KEY: ${{ secrets.REACT_APP_DISCOGS_CONSUMER_KEY }}
+          REACT_APP_DISCOGS_SECRET_KEY: ${{ secrets.REACT_APP_DISCOGS_SECRET_KEY }}
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
