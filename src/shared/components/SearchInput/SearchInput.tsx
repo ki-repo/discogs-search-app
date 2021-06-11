@@ -49,6 +49,7 @@ const SearchInput = ({
           </FormLabelContainer>
           <FormInputContainer>
             <FormTextInput
+              tabIndex={1}
               onClick={handleClick}
               type="text"
               value={inputValue}
@@ -58,7 +59,9 @@ const SearchInput = ({
               placeholder={placeHolder}
             ></FormTextInput>
           </FormInputContainer>
-          <FormSubmitButton type="submit">Filter</FormSubmitButton>
+          <FormSubmitButton type="submit" tabIndex={2}>
+            Filter
+          </FormSubmitButton>
         </FormRow>
       </FormDivContainer>
     </form>

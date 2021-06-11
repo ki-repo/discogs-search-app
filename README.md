@@ -13,8 +13,14 @@ Is to practice reactjs, through building an app to view and search releases from
 - [x] Use React Hooks, lazy and Suspense APIs.
 - [x] Use [styled components](https://styled-components.com/) as a CSS-in-js library.
 - [x] Autodeploy the app on github pages using github Actions.
+    - used github secrets and deploy scripts to automate the deployment of the app to github pages.
 - [x] Work on Accessibility and Responsivness.
+    - the app is fully responsive, i used a mix of flexbox and grids for elements in order to maintain responsivness.
+    - after opening the website, just press a tab and start type directly.
+    - also you can move between elements with keyboard.
 - [x] Works well over slow networks
+    - i used react query to cache queireis by id, so the pagination response is also cached for defined period.
+- [x] The app is progressively ready but not with full capabilities and with more effort can work offline through caching react query quireies into localstorage
 
 ## Run the app
 

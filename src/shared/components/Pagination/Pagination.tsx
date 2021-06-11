@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { PaginationResponse, PAGINATION_SIZE } from '../../../apiCalls/release';
-import { PaginationControl, PaginationWrapper } from './Pagination.css';
+import { PaginationControl, PaginationInfo, PaginationWrapper } from './Pagination.css';
 /**
  * This component is used as a Pagination component
  */
@@ -19,6 +19,7 @@ const Pagination = ({
   return (
     <PaginationWrapper>
       <PaginationControl
+        tabIndex={3}
         isDisabled={!paginationInfo.first}
         onClick={() => {
           paginationInfo.first && PaginationCallBack(paginationInfo.first, 1);
@@ -27,6 +28,7 @@ const Pagination = ({
         {'<<'} first
       </PaginationControl>
       <PaginationControl
+        tabIndex={4}
         isDisabled={!paginationInfo.previous}
         onClick={() => {
           paginationInfo.previous &&
@@ -39,10 +41,11 @@ const Pagination = ({
         {'<'}previous
       </PaginationControl>
 
-      <PaginationControl isDisabled={false}>
+      <PaginationInfo>
         Page {paginationInfo.pageId} of {paginationInfo.totalPages}
-      </PaginationControl>
+      </PaginationInfo>
       <PaginationControl
+        tabIndex={5}
         isDisabled={!paginationInfo.next}
         onClick={() => {
           paginationInfo.next &&
@@ -52,6 +55,7 @@ const Pagination = ({
         next {'>'}
       </PaginationControl>
       <PaginationControl
+        tabIndex={6}
         isDisabled={!paginationInfo.last}
         onClick={() => {
           paginationInfo.last &&
