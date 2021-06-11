@@ -1,4 +1,3 @@
-import { env } from 'process';
 import { client } from 'src/utils/apiClient';
 
 export interface PaginationResponse {

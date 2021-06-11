@@ -1,4 +1,4 @@
-import React, { ReactElement, useCallback, useState } from 'react';
+import React, { ReactElement } from 'react';
 import { PaginationResponse, PAGINATION_SIZE } from '../../../apiCalls/release';
 import { PaginationControl, PaginationWrapper } from './Pagination.css';
 /**
